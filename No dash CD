@@ -1,0 +1,20 @@
+local takestam = game.ReplicatedStorage.Events.takestam
+local X;
+X = hookmetamethod(game, "__namecall", function(self, ...)
+    if self == takestam then --put the takestam remote into a local variable so the script looks cleaner
+        return; --blocks remote
+    end
+    return X(self, ...)
+end)
+for i,v in pairs(getreg()) do
+    if type(v) == 'function' and islclosure(v) then --I forgot to remove the getfenv script check, using getfenv on every function in registry deoptimizes the game so only use it when dumping the upvalues in a script
+        if #(getupvalues(v)) >= 12 and tostring(getupvalue(v,12)) == "Ragdolls" then --checks for this unique upvalue to find the correct function in registry
+            spawn(function()
+                while task.wait() do
+                    setupvalue(v, 6, false) --constantly settings the debounce to false so there's no cooldown
+                end
+            end)
+            break; --no need to keep looking for it since we just found it
+        end
+    end
+end
