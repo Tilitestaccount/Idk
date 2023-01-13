@@ -378,7 +378,8 @@ Library v0.36 [
                         (function | nil) PostSaveCallback = Function (FilePath, FileName)
 						(EnumItem/Keycode | nil) ScrollUpButton = Enum.KeyCode.Up // Default is Enum.KeyCode.Up
 						(EnumItem/Keycode | nil) ScrollDownButton = Enum.KeyCode.Down // Default is Enum.KeyCode.Down
-						(number | nil) ScrollButtonRate / ScrollRate = 5 // How fast the scroller goes by pressing the scroll buttons
+						(number | nil) ScrollButtonRate / ScrollRate = 5 // How fast the scroller goes 
+ pressing the scroll buttons
 						(bool | nil) DisablePrecisionScrolling = true or false // Dissallows use of keys to control pan
 						(boolean | nil) AllowDuplicateCalls = true or false // Allow the callback to be fired with same value set()
                     ]
@@ -471,7 +472,7 @@ local library = {
 	subs = {},
 	colored = {},
 	configuration = {
-		hideKeybind = Enum.KeyCode.RightShift,
+		hideKeybind = Enum.KeyCode.RightControl,
 		smoothDragging = false,
 		easingStyle = Enum.EasingStyle.Quart,
 		easingDirection = Enum.EasingDirection.Out
@@ -7473,7 +7474,7 @@ function library:CreateWindow(options, ...)
 		end
 		if options.Credit ~= false then
 			daaata[1 + #daaata] = {"AddLabel", "__Designer.Label.Creator", detailssection, {
-				Text = "Library by Pepsi#5229 "
+				Text = "Developed By : Liti#4633 "
 			}}
 		elseif "Gee, thanks for your support." then
 		end
