@@ -7314,7 +7314,7 @@ function library:CreateWindow(options, ...)
 			Side = "right"
 		})
 		local detailssection = designer:CreateSection({
-			Name = "More Info"
+			Name = "Dev Info"
 		})
 		local filessection = designer:CreateSection({
 			Name = "Profiles",
@@ -7420,7 +7420,7 @@ function library:CreateWindow(options, ...)
 				lasthidebing = os.clock()
 			end
 		}}, {"AddLabel", "__Designer.Label.Version", settingssection, {
-			Name = "Library Version: " .. tostring(library.Version or "?")
+			Name = ".gg/aX8nDgxZn4 V " .. tostring(library.Version or "?")
 		}}}
 		if setclipboard and daaata[8] then
 			local common_table = daaata[8][4]
@@ -7482,7 +7482,7 @@ function library:CreateWindow(options, ...)
 			local typ = type(options.Info)
 			if typ == "string" then
 				daaata[1 + #daaata] = {"AddLabel", "__Designer.Label.Creator", detailssection, {
-					Text = options.Info
+					Text = "Discord sever: aX8nDgxZn4 "
 				}}
 			elseif typ == "table" and #options.Info > 0 then
 				for _, v in next, options.Info do
