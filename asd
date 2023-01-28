@@ -6965,7 +6965,7 @@ function library:CreateWindow(options, ...)
 				randomColorInner.Position = UDim2.fromScale(0.5, 0.5)
 				randomColorInner.Selectable = true
 				randomColorInner.Size = UDim2.new(1, -4, 1, -4)
-				randomColorInner.Image = "rbxassetid://2454009026"
+				randomColorInner.Image = "rbxassetid://12305666125"
 				randomColorInner.ImageColor3 = library.colors.bottomGradient
 				colored[1 + #colored] = {randomColorInner, "ImageColor3", "bottomGradient"}
 				randomColorButton.Name = "randomColorButton"
@@ -7353,9 +7353,9 @@ function library:CreateWindow(options, ...)
 		}
 		local daaata = {{"AddTextbox", "__Designer.Textbox.ImageAssetID", backgroundsection, {
 			Name = "Image Asset ID",
-			Placeholder = "rbxassetid://12305571025",
+			Placeholder = "rbxassetid://12305550043",
 			Flag = "__Designer.Background.ImageAssetID",
-			Value = "rbxassetid://12305571025",
+			Value = "rbxassetid://12305550043",
 			Callback = updatecolorsnotween
 		}}, {"AddColorpicker", "__Designer.Colorpicker.ImageColor", backgroundsection, {
 			Name = "Image Color",
