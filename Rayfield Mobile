@@ -830,7 +830,7 @@ function ArrayFieldLibrary:Notify(NotificationSettings)
 	end)
 end
 
-ArrayFieldLibrary:Notify({Title = "HygorL Hub", Content = "Mobile Detectado,modificamos a UI para poder usar", Duration = 7})
+ArrayFieldLibrary:Notify({Title = "Tilii Development", Content = "Loading A Mobile Version of ur hub", Duration = 7})
 
 function CloseSideBar()
 	Debounce = true
